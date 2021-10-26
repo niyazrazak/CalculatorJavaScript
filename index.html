@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <table class="">
+            <tr cellspacing="0px" cellpadding="0px">
+                <td colspan='4'>
+                    <input type="text" class="inp" id="output">
+                </td>
+            </tr>
+            <tr cellspacing="0px" cellpadding="0px">
+                <td>
+                    <button onclick="buttonClick('+')" class="btn btn-dark">+</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick('-')" class="btn btn-dark">-</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick('*')" class="btn btn-dark">x</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick('/')" class="btn btn-dark">÷</button>
+                </td>
+            </tr>
+            <tr cellspacing="0px" cellpadding="0px">
+                <td>
+                    <button onclick="buttonClick(7)" class="btn btn-secondary">7</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(8)" class="btn btn-secondary">8</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(9)" class="btn btn-secondary">9</button>
+                </td>
+                <td rowspan="4">
+                    <button onclick="equalClick()" class="btn-equal btn-danger" id="">=</button>
+                </td>
+            </tr>
+            <tr cellspacing="0px" cellpadding="0px">
+                <td>
+                    <button onclick="buttonClick(4)" class="btn btn-secondary">4</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(5)" class="btn btn-secondary">5</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(6)" class="btn btn-secondary">6</button>
+                </td>
+            </tr>
+            <tr cellspacing="0px" cellpadding="0px">
+                <td>
+                    <button onclick="buttonClick(1)" class="btn btn-secondary">1</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(2)" class="btn btn-secondary">2</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick(3)" class="btn btn-secondary">3</button>
+                </td>
+            </tr>
+            <tr cellspacing="0px" cellpadding="0px">
+                <td>
+                    <button onclick="buttonClick(0)" class="btn btn-secondary">0</button>
+                </td>
+                <td>
+                    <button onclick="buttonClick('.')" class="btn btn-secondary">.</button>
+                </td>
+                <td>
+                    <button onclick="clearDisplay()" class="btn btn-secondary">AC</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <script src="app.js"></script>
+</body>
+
+</html>
